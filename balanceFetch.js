@@ -35,7 +35,7 @@ async function getTokenBalance(chain, address, tokenAddress) {
             method: 'eth_call',
             params: [{
                 to: tokenAddress,
-                data: `0x70a08231000000000000000000000000${address.substring(2)}`
+                data: `0x70a08231000000000000000000000000${address.substring(2)}` //balanceOf
             }, 'latest'],
             id: 1
         });
